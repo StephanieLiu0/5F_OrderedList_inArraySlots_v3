@@ -25,10 +25,9 @@ public class OrderedList_inArraySlots
     public int whileIndexOf( Integer findMe) {
 	int low = 0;
 	int high = size()-1;
-	int cur;
 
 	while (high >= low) {
-	    cur = (low+high)/2;
+	    int cur = (low+high)/2;
 	    int value = list_iAS.get(cur)-findMe;
 	    if (value == 0)
 		return cur;
